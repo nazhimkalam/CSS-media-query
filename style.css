@@ -1,0 +1,49 @@
+body {
+	color: red;
+}
+
+p {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+}
+
+/* THIS IS THE MEDIA QUERY*/
+@media (max-width: 500px) {
+	/* when the width of the screen limits maximum to 500px or less then the following styles are applied*/
+	body {
+		color: blue;
+	}
+}
+
+@media print{ /* when the user goes to print mode to get the hard copy then the following styles are applied */
+    body{
+        color: rgb(0, 255, 55);
+    }
+}
+
+@media (orientation: landscape){
+    h2{
+        color: palevioletred;
+        font-size: 45px;
+    }
+}
+
+@media (orientation: landscape) and (max-width: 500px){   /* this is a combination landscape mode AND max-width */
+    h2{
+        color: black;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+}
+
+@media (orientation: landscape), (max-width: 500px){   /* this is a combination landscape mode OR max-width */
+    h2{
+        color: black;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+}
+
+@media (orientation: portrait){
+    h2{
+        color: peru;
+    }
+}
